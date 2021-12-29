@@ -1,10 +1,5 @@
-:root{
-    --general: #F4B066;
-    --accident: #7344F4;
-    --additional: #DAE0F2;
-    --fogra: #071013;
-    --alice: #EDF5FC;
-}
+@import '/src/css/colors.css';
+
 
 @font-face {
     font-family: zendots;
@@ -12,29 +7,135 @@
 }
 
 /* Custom global styles (BS extend) */
-
-.og-text-zen{
-    font-family: zendots;
+html{
+    font-size: 62.5%;
 }
+body{
+    margin: 0;
+    
+}
+*{
+    font-family: zendots;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: var(--alice);
+}
+a:hover{
+    color: var(--accident);
+}
+/* Edged buttons styles */
+.og-edged{
+    background: var(--edged);
+    color: var(--alice);
+}
+
+
+/* Header */
+    header.og-landing-header{
+        position: fixed;
+        inset: 0;
+        bottom: unset;
+        width:100%;
+        padding: 32px 64px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    header.og-landing-header> *{
+        flex-grow: 1;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding-top: 0 8px;
+    }
+    
+    header.og-landing-header .faq{
+        justify-content: center;
+    }
+    header.og-landing-header .discord{
+        justify-content: flex-end;
+    }
+    header.og-landing-header .links{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 8px;
+    }
+    header.og-landing-header .links a{
+        margin-bottom: 12px;
+    }
+    header.og-landing-header .links a.faq{
+        display: none;
+    }
+    .logo-container img{
+        width: 64px;
+        height: 30px;
+    }
+    header.og-landing-header .toggler{
+        flex-grow: 0;
+        width: 34px;
+        margin-left: 16px;
+        display: none;
+        cursor: pointer;
+        justify-content: center;
+    }
+    header.og-landing-header .toggler *{
+        pointer-events: none;
+        width: 34px;
+    }
+
+/* EndHeader */
 
 
 /* Landing */
-.og-landing{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../img/landing-main.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    position: relative;
-}
-.og-landing .og-overlay--dark{
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #0005;
-    z-index: 1;
-}
+    .og-landing{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../img/landing-main.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        position: relative;
+        padding: 32px;
+    }
+    .og-landing .og-overlay--dark{
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000c;
+        z-index: 1;
+        inset: 0;
+        pointer-events: none;
+    }
+    .og-landing .socials{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    .og-landing .socials a{
+        height: 32px;
+        width: 32px;
+        display: grid;
+        place-items:center;
+        font-size: 24px;
+        z-index: 1;
+        margin: 8px;
+    }
+    .og-landing .equalizer{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 32px;
+    }
 
 

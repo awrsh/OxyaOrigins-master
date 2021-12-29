@@ -1,0 +1,67 @@
+@import '/src/css/colors.css';
+@media (max-width: 768px){
+    html{
+        font-size: 56%;
+    }
+    /* Header */
+    header.og-landing-header{
+        width: unset;
+        padding: 32px 16px;
+        align-items: center;
+    }
+    header.og-landing-header .logo-container{
+        order: 1;
+    }
+    header.og-landing-header .become{
+        order: 2;
+    }
+    header.og-landing-header .discord{
+        order: 3;
+        margin-right: 8px;
+    }
+    header.og-landing-header .faq{
+        display: none;
+    }
+   
+    header.og-landing-header .toggler{
+        display: block;
+        order: 4;
+        margin: 0;
+    }
+    header.og-landing-header .links{
+        position: fixed;
+        height: 100%;
+        top: 0;
+        width: 50vw;
+        left: -50vw;
+        transition: 0.3s;
+        background-color: var(--additional);
+        height: 100vh;
+        z-index: 1000;
+        justify-content: flex-start;
+        padding: 16px;
+    }
+    header.og-landing-header .links a{
+        color: var(--fogra);
+        font-size: 1.4rem;
+    }
+    header.og-landing-header .links a.faq{
+        display: block;
+    }
+    header.og-landing-header .links.open{
+        left: 0;
+    }
+
+    /* Landing */
+    .og-landing{
+        background-position: 86%;
+        padding: 16px;
+    }
+    .og-landing .socials{
+        padding: 16px;
+        flex-direction: row;
+    }
+    .og-landing .equalizer{
+        padding: 16px;
+    }
+}
