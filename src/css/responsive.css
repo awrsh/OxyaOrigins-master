@@ -64,4 +64,13 @@
     .og-landing .equalizer{
         padding: 16px;
     }
+
+    /* EARLY */
+    .og-early-cycle{
+        background-position: 35%;
+    }
+    .cycle-title{
+        margin-top: unset;
+        margin-bottom: 32px;
+    }
 }

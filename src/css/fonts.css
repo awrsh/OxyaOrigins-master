@@ -10,6 +10,6 @@
 *{
     font-family: zendots;
 }
-.og-font-ibm{
+.og-font-ibm, .og-font-ibm *{
     font-family: IBM;
 }

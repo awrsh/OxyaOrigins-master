@@ -30,10 +30,16 @@ a:hover{
     color: var(--accident);
 }
 .title-1{
+    font-size: 3.5rem;
+}
+.title-1-r{
     font-size: calc(2rem + 1.2vw);
 }
 .title-2{
     font-size: 3rem;
+}
+.text-gray{
+    color: #ccc;
 }
 .og-overlay--dark{
     content: " ";
@@ -168,6 +174,9 @@ a:hover{
         background-image: url(/src/img/early-cycle.png);
         background-size: cover;
         padding: 96px 32px;
+    }
+    .cycle-title{
+        margin-top: 64px;
     }
     
 /* EndEearly */
