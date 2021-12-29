@@ -1,0 +1,15 @@
+@font-face {
+    font-family: zendots;
+    src: url(/src/fonts/zenDots/ZenDots-Regular.ttf);
+}
+@font-face {
+    font-family: IBM;
+    src: url(/src/fonts/IBM/IBMPlexSans-Medium.ttf);
+}
+
+*{
+    font-family: zendots;
+}
+.og-font-ibm{
+    font-family: IBM;
+}
