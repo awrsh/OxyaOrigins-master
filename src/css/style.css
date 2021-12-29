@@ -38,8 +38,8 @@ a:hover{
 .title-2{
     font-size: 3rem;
 }
-.text-gray{
-    color: #ccc;
+.text-alice-gray{
+    opacity: 0.72;
 }
 .text-gold{
     color: var(--gold);
@@ -57,6 +57,8 @@ a:hover{
 .og-section {
     position: relative;
     padding: 32px;
+    background: #000;
+
 }
 .og-section-inter{
     height: 100px;
@@ -266,7 +268,6 @@ a:hover{
         height: 100%;
         left: calc( 50% - 8vw );
         top: 0;
-        /* transform: scale(0.6); */
         overflow: hidden;
     }
     .roadmap-vector img{
@@ -277,9 +278,77 @@ a:hover{
 
 /* Join us */
     .og-joinus{
-        padding: 128px 0;
         background-image: url(/src/img/joinus.png);
         background-size: 75%;
     }
-    .joinus-content{}
+    .og-joinus .row{
+        padding: 128px 0;
+    }
 /* EndJoinus */
+
+
+/* OtherDesigners */
+    .og-other-designers{
+        background: #000;
+    }
+    .og-other-designers p{
+        text-align:center;
+    }
+    .og-other-designers p+p{
+        opacity: 0.72;
+        font-family: IBM;
+    }
+    .designer-single{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+    .designer-single img{
+        width: 50%;
+    }
+    .designer-single h2{
+        margin: 16px 0;
+    }
+    .designer-single p{
+        font-family: IBM;
+    }
+    .designer-single a{
+        font-size: 1.5rem;
+    }
+
+/* EndOtherDesigners */
+
+/* Rest */
+    .og-rest-team .row div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+    .og-rest-team h1{
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .og-rest-team  span{
+        flex-basis: 20%;
+        margin-bottom: 16px;
+    }
+/* EndRest */
+
+/* FAQ */
+    .og-faq .row >div{
+        margin-bottom: 48px;
+        padding: 0 24px;
+    }
+    .og-faq .head h1{
+        text-align: center;
+        padding: 0 16px;
+        
+    }
+    .og-faq .row >div h2{
+        margin-bottom: 16px;
+    }
+/* EndFAQ */

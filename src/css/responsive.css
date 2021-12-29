@@ -94,8 +94,13 @@
         display: none;
     }
     .og-joinus{
+        background-size: cover;
+    }
+    .og-joinus .row{
         padding: 32px 0;
     }
+    .og-faq .head a{display: none;}
+    .og-faq .head h1{text-align: left;}
 }
 
 @media (max-width: 576px){
