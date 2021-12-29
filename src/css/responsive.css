@@ -104,6 +104,7 @@
 }
 
 @media (max-width: 576px){
+    
     .og-luxion .lux-med > div{
         display: flex;
         justify-content: space-evenly;
@@ -126,5 +127,11 @@
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
+    }
+    .og-artists .head a{
+        display: none;
+    }
+    .og-artists .head{
+        justify-content: center;
     }
 }
