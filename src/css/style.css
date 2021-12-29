@@ -275,3 +275,11 @@ a:hover{
 
 /* EndRoadmap */
 
+/* Join us */
+    .og-joinus{
+        padding: 128px 0;
+        background-image: url(/src/img/joinus.png);
+        background-size: 75%;
+    }
+    .joinus-content{}
+/* EndJoinus */
