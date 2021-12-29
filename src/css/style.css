@@ -10,6 +10,31 @@
     font-family: zendots;
     src: url(../fonts/zenDots/ZenDots-Regular.ttf);
 }
-.OX-text-zen{
+
+/* Custom global styles (BS extend) */
+
+.ox-text-zen{
     font-family: zendots;
 }
+
+
+/* Landing */
+.ox-landing{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/landing-main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+.ox-landing .ox-overlay--dark{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0005;
+    z-index: 1;
+}
+
+
