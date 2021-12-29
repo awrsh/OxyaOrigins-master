@@ -235,3 +235,43 @@ a:hover{
         justify-content: center;
     }
 /* EndLuxion */
+
+
+/* Avatars */
+    .og-avatars{
+
+    }
+/* EndAvatars */
+
+/* Roadmap */
+    .og-roadmap {
+        min-height: 250px;
+        background-image: url(/src/img/roadmap.png);
+        background-size: 61%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #000;
+    }
+    .og-roadmap-sections{
+        padding: 64px;
+        background-color: #000;
+        background-image: url(/src/img/roadmap-sections.png);
+    }
+    .og-roadmap-sections h1{
+        margin-bottom: 24px;
+    }
+    .roadmap-vector {
+        width: 20vw;
+        position: absolute;
+        height: 100%;
+        left: calc( 50% - 8vw );
+        top: 0;
+        /* transform: scale(0.6); */
+        overflow: hidden;
+    }
+    .roadmap-vector img{
+        width: 50%;
+    }
+
+/* EndRoadmap */
+
