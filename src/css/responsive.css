@@ -73,4 +73,28 @@
         margin-top: unset;
         margin-bottom: 32px;
     }
+
+    /* Luxion */
+    .med-chars-container {
+        flex-direction: row;
+    }
+    .character-med-container:first-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 576px){
+    .og-luxion .lux-med > div{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 32px 0 ;
+        padding-bottom: 16px ;
+    }
+    .og-luxion .lux-big {
+        margin-bottom: 64px;
+    }
+    .character-big-container{
+        width: 85%;
+        margin: 0 auto  ;
+    }
 }

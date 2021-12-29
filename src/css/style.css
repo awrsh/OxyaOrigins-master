@@ -41,6 +41,9 @@ a:hover{
 .text-gray{
     color: #ccc;
 }
+.text-gold{
+    color: var(--gold);
+}
 .og-overlay--dark{
     content: " ";
     position: absolute;
@@ -53,6 +56,11 @@ a:hover{
 }
 .og-section {
     position: relative;
+    padding: 32px;
+}
+.og-section-inter{
+    height: 100px;
+    background: #000;
 }
 .og-section *{
     z-index: 1;
@@ -180,3 +188,50 @@ a:hover{
     }
     
 /* EndEearly */
+
+/* Luxion */
+    .og-luxion{
+        background-image: url(/src/img/luxion-bg.png);
+        background-size: cover;
+    }
+    .luxion-logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .luxion-logo{
+        margin: 0 16px;
+        width: 34px;
+    }
+    .med-chars-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .character-med-container:first-of-type{
+        margin-bottom: 64px;
+    }
+    .character-big-container{
+        width: 75%;
+        margin: 0 auto  ;
+    }
+    .character-med-container img{
+        width: 100px;
+    }
+    .character-bot-container{
+        position: relative; 
+    }
+    .character-bot-container .luxion-badge{
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 24px;
+    }
+    .lux-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+/* EndLuxion */
