@@ -13,13 +13,13 @@
 
 /* Custom global styles (BS extend) */
 
-.ox-text-zen{
+.og-text-zen{
     font-family: zendots;
 }
 
 
 /* Landing */
-.ox-landing{
+.og-landing{
     height: 100vh;
     width: 100%;
     background-image: url(../img/landing-main.png);
@@ -28,7 +28,7 @@
     background-position: right;
     position: relative;
 }
-.ox-landing .ox-overlay--dark{
+.og-landing .og-overlay--dark{
     content: " ";
     position: absolute;
     width: 100%;
