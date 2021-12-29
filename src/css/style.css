@@ -1,0 +1,15 @@
+:root{
+    --general: #F4B066;
+    --accident: #7344F4;
+    --additional: #DAE0F2;
+    --fogra: #071013;
+    --alice: #EDF5FC;
+}
+
+@font-face {
+    font-family: zendots;
+    src: url(../fonts/zenDots/ZenDots-Regular.ttf);
+}
+.OX-text-zen{
+    font-family: zendots;
+}
