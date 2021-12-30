@@ -91,7 +91,15 @@
         margin-top: unset;
         margin-bottom: 32px;
     }
-
+ 
+    .og-early-cycle .topics {
+        margin-bottom: 64px;
+    }
+    .og-early-cycle {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 70% 23%;
+    }
     /* Luxion */
     .med-chars-container {
         flex-direction: row;
@@ -100,16 +108,26 @@
         margin-bottom: 0;
     }
     .og-roadmap {
-        background-size: contain;
+        background-size: cover;
+        min-height: 250px;
     }
     .roadmap-vector{
         display: none;
+    }
+    .og-roadmap-sections .row > div{
+        margin-bottom: 32px;
+    }
+    .og-roadmap-sections {
+        padding: 32px;
     }
     .og-joinus{
         background-size: cover;
     }
     .og-joinus .row{
         padding: 32px 0;
+    }
+    .og-other-designers .designers > div{
+        margin-bottom: 16px;
     }
     .og-faq .head a{display: none;}
     .og-faq .head h1{text-align: left;}
@@ -158,6 +176,37 @@
     .og-landing .watermark{
         display: none;
     }
+    .og-titles .sup{
+        display: block;
+    }
+    .og-titles sup{
+        display: none;
+    }
+    .og-titles .row div *{
+        text-align: center;
+    } 
+    .og-titles .row div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .og-early-cycle .row{
+        justify-content: center;
+        text-align: center;
+    }
+    .og-early-cycle .contents p{
+        padding-right: 0px;
+    }
+    .og-early-cycle {
+        background-size: 200%;
+    }
+    .cycle-title{
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        text-align: center;
+    }
+ 
     .og-luxion .lux-med > div{
         display: flex;
         justify-content: space-evenly;
@@ -167,13 +216,14 @@
     .og-luxion .lux-big {
         margin-bottom: 64px;
     }
+    .og-roadmap-sections .row > div{
+        margin-bottom: 16px;
+    }
     .character-big-container{
         width: 85%;
         margin: 0 auto  ;
     }
-    .og-roadmap-sections .row > div{
-        margin-bottom: 32px;
-    }
+    
     .joinus-content{
         text-align: center;
         display: flex;
@@ -181,6 +231,7 @@
         align-items: center;
         margin: 0 auto;
     }
+   
     .og-artists .head a{
         display: none;
     }

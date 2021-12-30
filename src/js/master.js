@@ -17,10 +17,13 @@ function init_swiper(){
         },
         breakpoints:{
             360:{
-                slidesPerView: 2
+                slidesPerView: 1
             }, 
+            576:{
+                slidesPerView:2
+            },
             768:{
-                slidesPerView:3
+                slidesPerView: 3
             }
         },
 

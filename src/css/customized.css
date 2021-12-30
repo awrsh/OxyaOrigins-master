@@ -25,9 +25,62 @@ a.og-edged-gradient{
     background: linear-gradient(90deg, #201b1a,#353433, #201b1a);
     border-radius: 8px 0 8px 0;
     font-size: 2rem;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    width: min-content;
+    padding: 0 12px;
 }
 .og{
     margin: 0 4px;
+}
+.text-alice-gray{
+    opacity: 0.72;
+}
+.text-gold{
+    color: var(--gold);
+}
+.og-section .og-overlay--dark{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(0, #000 , #0000 , #000 );
+    z-index: 0;
+    inset: 0;
+    pointer-events: none;
+}
+.og-section .og-overlay--darker{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(0, #000 , #0006 , #000 );
+    z-index: 0;
+    inset: 0;
+    pointer-events: none;
+}
+.og-section .og-overlay--darker2{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(0, #000 , #000a , #000 );
+    z-index: 0;
+    inset: 0;
+    pointer-events: none;
+}
+.title-1{
+    font-size: calc(4rem + 0.5vw);
+}
+.title-1-r{
+    font-size: calc(2rem + 1vw);
+}
+.title-2{
+    font-size: 3rem;
 }
 .vertical-line {
 	height: 210px;
