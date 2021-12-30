@@ -9,3 +9,35 @@
     -webkit-text-fill-color: transparent;    
     -o-text-fill-color: transparent;    
 }
+.trans-shadow {
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #fff2;
+}
+a.og-edged{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 8px 0 8px 0;
+}
+a.og-edged-gradient{
+    background: linear-gradient(90deg, #201b1a,#353433, #201b1a);
+    border-radius: 8px 0 8px 0;
+    font-size: 2rem;
+}
+.og{
+    margin: 0 4px;
+}
+.vertical-line {
+	height: 210px;
+	width: 1px;
+    background: linear-gradient(0deg, #ccc0 0%, #fff8 40%, #ccc0 80%);
+    opacity: 0.5;
+}
+.vertical-line-1{
+	height: 210px;
+	width: 1px;
+    background: linear-gradient(180deg, #fff8 40%, #ccc0 80%);
+    opacity: 0.5;
+}

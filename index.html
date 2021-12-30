@@ -20,11 +20,13 @@
     
         <header class="og-landing-header">
             <div class="links">
-                <a href="#characters">CHARACTERS</a>
-                <a href="#collections">COLLECTIONS</a>
-                <a href="#about">ABOUT</a>
-                <a href="#roadmap">ROADMAP</a>
-                <a class="faq" href="#faq">FAQ</a>
+                <div class="d-flex flex-column ">
+                    <a href="#characters">CHARACTERS <i class="og og-chevron-down open"></i></a>
+                    <a href="#collections">COLLECTIONS</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#roadmap">ROADMAP</a>
+                    <a class="faq" href="#faq">FAQ</a>
+                </div>
             </div>
             <div class="become">
                 <a class="text-center" href="#become-holder">>BECOME THE FIRST HOLDER</a>
@@ -35,7 +37,7 @@
             <div class="faq text-center">
                 <a href="#FAQ">FAQ</a>
             </div>
-            <div class="discord text-end">
+            <div class="discord ">
                 <a class="og-edged text-center" href="#discord">
                     <span class="og-text-zen">JOIN US ON DISCORD</span>
                     <i class="og og-discord"></i>
@@ -51,7 +53,12 @@
     <!-- Landing -->
         <main>
             <section class="og-section  og-landing">
-                <div class="og-overlay--dark"></div>
+                <div class="watermark">
+                    <p>OXYA ORI<span class='trans-shadow'>G</span>INS</p>
+                </div>
+                <div class="vertical-line-1 line-1"></div>
+                <div class="vertical-line line-2"></div>
+                <!-- <div class="og-overlay--dark"></div> -->
 
                 <div class="socials">
                     <a class="og-edged-gradient" href="#instagram">
@@ -207,7 +214,7 @@
             <section class="og-section og-roadmap">
                 <h2 class="text-center pt-5 title-1-r">ROADMAP</h2>
             </section>
-            <section class="og-section og-roadmap-sections">
+            <section id="roadmap" class="og-section og-roadmap-sections">
                 <div class="roadmap-vector">
                     <img src="/src/img/roadmap-sections-vector.png" alt="vector">
                 </div>
@@ -227,7 +234,7 @@
                                 <ul>
                                     <li>1st Community Vote</li>
                                     <li>Tokenomics Revealed</li>
-                                    <li>Community Lords Rewards Starting (3%)</li>
+                                    <li>Community Lords  Rewards Starting (3%)</li>
                                 </ul>
                             </div>
                         </div>
@@ -250,7 +257,7 @@
                                 <ul>
                                     <li>1st Community Vote</li>
                                     <li>Tokenomics Revealed</li>
-                                    <li>Community Lords Rewards Starting (3%)</li>
+                                    <li>Community Lords  Rewards Starting (3%)</li>
                                 </ul>
                             </div>
                         </div>
@@ -271,7 +278,7 @@
                                 <ul>
                                     <li>1st Community Vote</li>
                                     <li>Tokenomics Revealed</li>
-                                    <li>Community Lords Rewards Starting (3%)</li>
+                                    <li>Community Lords  Rewards Starting (3%)</li>
                                 </ul>
                             </div>
                         </div>
@@ -296,7 +303,7 @@
                                     <ul>
                                         <li>1st Community Vote</li>
                                         <li>Tokenomics Revealed</li>
-                                        <li>Community Lords Rewards Starting (3%)</li>
+                                        <li>Community Lords  Rewards Starting (3%)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -317,7 +324,7 @@
                                     <ul>
                                         <li>1st Community Vote</li>
                                         <li>Tokenomics Revealed</li>
-                                        <li>Community Lords Rewards Starting (3%)</li>
+                                        <li>Community Lords  Rewards Starting (3%)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -568,7 +575,7 @@
             </section>
             <section class="og-section-inter"></section>
 
-            <section class="og-section og-faq">
+            <section id="faq"  class="og-section og-faq">
                 <div class="head d-flex mb-5">
                     <h1 class="fs-1 flex-grow-1 ">FAQ</h1>
                     <a class="og-edged" href="#discord">
@@ -644,9 +651,9 @@
                     <div class="col-12 col-md-8 row og-upper my-5 my-md-0">
                         <div class="col-4 d-flex flex-column">
                             <a href="#">Characters Collection</a href="#">
-                            <a href="#">About</a href="#">
-                            <a href="#">Roadmap</a href="#">
-                            <a href="#">FAQ</a href="#">
+                            <a href="#">About</a href="#about">
+                            <a href="#">Roadmap</a href="#roadmap">
+                            <a href="#">FAQ</a href="#faq">
                             <a href="#">Privacy Policy</a href="#">
                         </div>
                         <div class="col-4  d-flex flex-column">

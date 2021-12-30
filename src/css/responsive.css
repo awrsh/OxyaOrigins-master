@@ -1,5 +1,17 @@
 @import '/src/css/colors.css';
 
+@media (min-width: 1024px){
+    header.scrolled .links{
+        overflow: hidden;
+    }
+    header.scrolled .links:hover,
+    header.scrolled .links:focus,
+    header.scrolled .links:focus-within,
+    header.scrolled .links:focus-visible
+    {
+        overflow: visible;
+    }
+}
 @media (max-width: 1100px){
     .roadmap-vector{
         width: 32vw;
@@ -24,38 +36,38 @@
     header.og-landing-header .discord{
         order: 3;
         margin-right: 8px;
+        justify-content: center;
     }
     header.og-landing-header .faq{
         display: none;
     }
    
     header.og-landing-header .toggler{
-        display: block;
+        display: flex;
         order: 4;
         margin: 0;
     }
     header.og-landing-header .links{
         position: fixed;
         height: 100%;
-        top: 0;
-        width: 50vw;
-        left: -50vw;
+        top: 35vh;
+        width: 45vw;
+        right: -100%;
         transition: 0.3s;
-        background-color: var(--additional);
-        height: 100vh;
         z-index: 1000;
         justify-content: flex-start;
         padding: 16px;
+        align-items: flex-end;
     }
     header.og-landing-header .links a{
-        color: var(--fogra);
-        font-size: 1.4rem;
+        text-align: right;
+        font-size: 4rem;
     }
     header.og-landing-header .links a.faq{
         display: block;
     }
     header.og-landing-header .links.open{
-        left: 0;
+        right:0;
     }
 
     /* Landing */
@@ -104,7 +116,48 @@
 }
 
 @media (max-width: 576px){
-    
+    .og-landing{
+        background-position: 50%;
+    }
+    .og-landing .vertical-line-1.line-1{
+        display: none;
+    }
+    .og-landing .vertical-line.line-2{
+        display: none;
+    }
+    header.og-landing-header .become {
+        transform: translate(-18px,100px);
+        white-space: nowrap;
+        justify-content: center;
+        font-size: 1.3rem;
+        transition: 0.2s;
+    }
+    header.og-landing-header.scrolled .become {
+        transform: translate(0);
+        white-space: nowrap;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    header.og-landing-header .discord{
+        display: none;
+    }
+    header.og-landing-header.scrolled .toggler {
+        
+        transform: translateX(0);
+    }
+    header.og-landing-header .toggler{
+        padding: 0 4px;
+        transform: translateX(-10px);
+        transition: 0.2s;
+    }
+
+    header.og-landing-header .links a{
+        text-align: right;
+        font-size: 3rem;
+    }
+    .og-landing .watermark{
+        display: none;
+    }
     .og-luxion .lux-med > div{
         display: flex;
         justify-content: space-evenly;
